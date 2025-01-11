@@ -4,6 +4,8 @@ const APIKEY = 'live_Pm22G7kwLyHBwtPniT0aDchEgXZZfdLDaNuXqdCC1rO1aIjVfPrxi8XBs15
 const API_URL_RAND = `https://api.thecatapi.com/v1/images/search?api_key=${APIKEY}&limit=2`;
 const API_URL_FAVS =`https://api.thecatapi.com/v1/favourites?api_key=${APIKEY}&limit=40`;
 const API_URL_FAVS_DELETES = (id) => `https://api.thecatapi.com/v1/favourites/${id}?api_key=${APIKEY}&limit=40`;
+const API_URL_UP =`https://api.thecatapi.com/v1/images/upload?api_key=${APIKEY}`;
+
 
 const spanError = document.getElementById('error');
 
@@ -99,6 +101,22 @@ async function deleteFavMichi(id) {
     }
 }
 
+
+async function uploadMichi() {
+    const form = document.getElementById('uploadingForm')
+    const formData = new FormData(form);
+
+    console.log(formData.get('file'));
+
+    const res = await fetch(API_URL_UP, {
+        method: 'POST',
+        headers: {
+            //'Content-Type': 'multipart/form-data'
+        },
+        body: formData,
+    }) 
+    console.log('foto subida');
+}
 
 
 //poniendo reload aqui llamas a la funcion siempre que ermine de cargar
