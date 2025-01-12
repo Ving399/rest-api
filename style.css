@@ -4,11 +4,16 @@
     padding: 0;
 }
 #body {
-    background-color: aquamarine;
+    background-color: #eed9bf;
+    font-family: 'Lato', sans-serif;
+    background-image: url('./catss.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #header {
-    background-color: rgb(159, 47, 47);
+    background-color: #cf8d5e;
     text-align: center;
 }
 
@@ -16,8 +21,9 @@
     margin: 50px auto;
     width: 50%;
     text-align: center;
-    background-color: rgb(77, 75, 204);
+    background-color: #ecca6c;
     border-radius: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     /* outline: 4px solid; */
 }
 
@@ -36,13 +42,13 @@
     width: 100px;
     height: 30px;
     border: none;
-    background-color: blueviolet;
+    background-color: #eed9bf;
     border-radius: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .section .buttons:hover {
-    background-color: #04AA6D; /* Green */
+    background-color: #996139; 
     color: white;
 }
 
@@ -50,8 +56,9 @@
     margin: 50px auto;
     width: 50%;
     text-align: center;
-    background-color: rgb(77, 75, 204);
+    background-color: #ecca6c;
     border-radius: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     /* outline: 4px solid;  */
 }
 
@@ -73,13 +80,13 @@
     width: 100px;
     height: 30px;
     border: none;
-    background-color: blueviolet;
+    background-color: #eed9bf;
     border-radius: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .sectionFav .buttons2:hover {
-    background-color: #04AA6D; /* Green */
+    background-color: #996139;
     color: white;
 }
 
@@ -87,13 +94,14 @@
     margin: 50px auto;
     width: 50%;
     text-align: center;
-    background-color: rgb(77, 75, 204);
+    background-color: #ecca6c;
     border-radius: 20px;
-    outline: 4px solid;  
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* outline: 4px solid;   */
 }
 
 .upload .title3 {
-    background-color: aqua;
+    background-color: #cf8d5e;
 }
 
 .upload .buttonadd {
@@ -106,7 +114,7 @@
     width: 100px;
     height: 30px;
     border: none;
-    background-color: blueviolet;
+    background-color: #eed9bf;
     border-radius: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -116,8 +124,13 @@
     width: 100px;
     height: 30px;
     border: none;
-    background-color: blueviolet;
+    background-color: #eed9bf;
     border-radius: 5px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.upload .buttons3:hover {
+    background-color: #996139; 
+    color: white;
 }
 
