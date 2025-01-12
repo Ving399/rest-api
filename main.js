@@ -20,15 +20,15 @@ async function loadRandMichis(){
         spanError.innerHTML = "Hubo un error" + res.status;
     } else {
     const img1 = document.getElementById('img1');
-    const img2 = document.getElementById('img2');
+    //const img2 = document.getElementById('img2');
     const btn1 = document.getElementById('btn1');
-    const btn2 = document.getElementById('btn2');
+    //const btn2 = document.getElementById('btn2');
 
     img1.src = data[0].url;
-    img2.src = data[1].url;
+    //img2.src = data[1].url;
 
     btn1.onclick = () => saveFavMichis(data[0].id);
-    btn2.onclick = () => saveFavMichis(data[1].id);
+    //btn2.onclick = () => saveFavMichis(data[1].id);
     }
 }
 
@@ -53,8 +53,13 @@ async function loadFavMichis(){
 
         data.forEach(michi =>{
            const article = document.createElement('article');
+           article.className = 'elementF1';
+
            const img = document.createElement('img');
+           img.className = 'elementF1 img1';
+
            const btn = document.createElement('button');
+           btn.className = 'buttons2';
            const btnText = document.createTextNode('Sacar al michi');
            
            img.src =michi.image.url

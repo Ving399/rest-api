@@ -4,46 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatitos aleatorios</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h1>Gatitos aliatorios</h1>
+<body id="body">
+    <header id="header">
+        <h1>Gatitos aliatorios</h1>
+    </header>
 
     <span id="error">Errors</span>
 
-    <section id="randomMichis">
+    <section id="randomMichis" class="section">
 
-        <h2>La APP de gatitos</h2>
+        <h2 class="element1">La APP de gatitos</h2>
 
-        <article>
-            <img id="img1" width="150" alt="Foto de gato aleatorio">
-            <button id="btn1">Favoritos</button>
+        <article class="element2">
+            <img id="img1" width="150" alt="Foto de gato aleatorio" class="element2 img">
+            <button id="btn1" class="buttons">Favoritos</button>
         </article>
 
-        <article>
-            <img id="img2" width="150" alt="Foto de gato aleatorio">
-            <button id="btn2">Favoritos</button>
-        </article>
-
-        <button onclick="loadRandMichis()">Recargar</button>   
+        <button onclick="loadRandMichis()" class="buttons">Otro michi</button>   
 
     </section>
 
-    <section id="favoritesMichis">
+    <section id="favoritesMichis" class="sectionFav">
 
-        <h2>Gatitos favoritos</h2>
+        <h2 id="title2">Gatitos favoritos</h2>
 
-        <article>
-            <img id="img4" width="150" alt="Foto de gato aleatorio">
-            <button onclick="reload()">Sacar</button>
+        <article class="elementF1">
+            <img id="img4" width="150" class="elementF1 img1" alt="Foto de gato aleatorio">
+            <button class="buttons2" onclick="reload()">Sacar</button>
         </article>
     </section>
 
-    <section id="uploadMichi">
-        <h2>Sube la foto de tu michi</h2>
+    <section id="uploadMichi" class="upload">
+        <h2 class="title3">Sube la foto de tu michi</h2>
 
         <form id="uploadingForm">
-            <input id="file" type="file" name="file"/>
-            <button type="button" onclick="uploadMichi()">Subir foto</button>
+            <input id="file" class="buttonadd" type="file" name="file"/>
+            <label for="file" class="custombtn">Seleccionar</label>
+            <button type="button" class="buttons3" onclick="uploadMichi()">Subir foto</button>
         </form>
     </section>
 
